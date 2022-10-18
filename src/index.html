@@ -1,19 +1,63 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <title>Artificial Intelligence</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script type="module" src="./js/index.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/header.html"></include>
-    <include src="./partials/example.html"></include>
+    <header class="header">
+      <div class="container">
+        <a href="./index.html" class="logo link">
+          <img src="./images/logo.png" alt="logo" />
+          <span class="logo__text">Artificial Intelligence</span>
+        </a>
+        <nav class="navigation"><ul>
+        <li class="nav__item list"><a href="" class="link nav__link">Home</a></li>
+        <li class="nav__item list"><a href="" class="link nav__link">About</a></li>
+        <li class="nav__item list"><a href="" class="link nav__link">Services</a></li>
+        <li class="nav__item list"><a href="" class="link nav__link">Blog</a></li>
+        <li class="nav__item list"><a href="" class="link nav__link">Contact</a></li></nav>
+        <button type="button" class="navigation__button">Sign In</button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <p class="hero__top-text">Next genaretion platform</p>
+          <h1 class="hero__title">Artificial intelligence & Syber security</h1>
+          <p class="hero__bottom-text"></p>
+          <div class="hero__button-container">
+            <button type="button" class="hero__button">Get Started</button>
+            <button type="button" class="hero__button">Watch Video</button>
+            <img src="./images/hero_bg.png" alt="hero_bg">
+          </div>
+        </div>
+      </section>
+      <section class="client">
+        <div class="container">
+          <h2 class="client__title">Clients</h2>
+          <ul class="client__list">
+          <li class="client__item"><img src="./images/company1.png" alt="company1"></li>
+          <li class="client__item"><img src="./images/company2.png" alt="company2"></li>
+          <li class="client__item"><img src="./images/company3.png" alt="company3"></li>
+          <li class="client__item"><img src="./images/company4.png" alt="company4"></li>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
